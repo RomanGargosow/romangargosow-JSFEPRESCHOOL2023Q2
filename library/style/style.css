@@ -4,19 +4,11 @@
 
 html {
   scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
 }
 
 body {
-  padding: 0;
   margin: 0;
   background-color: #d3d3d3;
-}
-
-h1 {
-  padding: 0;
-  margin: 0;
 }
 
 ul {
@@ -30,71 +22,123 @@ a {
 }
 
 .header {
-  background-image: url("../source/bg/bg-header.png");
-  /* container */
+  background-image: url(../source/bg/bg-header.png);
+  min-width: 1440px;
+  height: 90px;
+  margin: 0 auto;
+  /* wrapper-header */
 }
-.header .container {
-  padding-top: 3px;
+.header .wrapper-header {
+  display: flex;
   margin: 0 auto;
   width: 1440px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   /* h1 */
-  /* menu-wrapper */
+  /*  *************************************** */
+  /* header-nav */
+  /* nav img */
 }
-.header .container h1 {
+.header .wrapper-header h1 {
   padding-left: 20px;
+  margin-right: 454px;
+  /* a */
 }
-.header .container h1 a {
+.header .wrapper-header h1 a {
   color: #fff;
   font-family: Forum;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 166.667% */
   letter-spacing: 0.6px;
+  line-height: 50px; /* 166.667% */
   transition: 1s;
 }
-.header .container h1 a:hover {
+.header .wrapper-header h1 a:hover {
+  color: gray;
   transition: 1s;
-  color: rgb(214, 165, 165);
 }
-.header .container .menu-wrapper {
-  display: flex;
-  /* header-nav */
-}
-.header .container .menu-wrapper .header-nav {
-  width: 584px;
+.header .wrapper-header .header-nav {
   margin-right: 40px;
+  display: flex;
+  align-items: center;
   /* ul */
 }
-.header .container .menu-wrapper .header-nav ul {
+.header .wrapper-header .header-nav ul {
+  padding: 0;
   display: inline-flex;
   align-items: flex-start;
   gap: 30px;
-  padding: 0;
   /* li */
 }
-.header .container .menu-wrapper .header-nav ul li {
-  padding: 0;
-  margin: 0;
+.header .wrapper-header .header-nav ul li {
+  color: black;
+  /* a */
 }
-.header .container .menu-wrapper .header-nav ul li a {
+.header .wrapper-header .header-nav ul li a {
   color: #fff;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 250% */
   transition: 1s;
 }
-.header .container .menu-wrapper .header-nav ul li a:hover {
+.header .wrapper-header .header-nav ul li a:hover {
+  color: gray;
   transition: 1s;
-  color: rgb(214, 165, 165);
 }
-.header .container .menu-wrapper .header-nav-img {
+.header .wrapper-header img {
   margin-right: 20px;
 }
 
 /* header */
+/* ******************************************** */
+.main {
+  color: black;
+  /* comment */
+  /* welcome */
+}
+.main .section-welcome {
+  background-image: url(../source/bg/bg-welcome.png);
+  min-width: 1440px;
+  height: 600px;
+  /* wrapper-welcome */
+}
+.main .section-welcome .wrapper-welcome {
+  width: 1440px;
+  margin: 0 auto;
+  /* welcome-balance */
+  /* welcome-title */
+}
+.main .section-welcome .wrapper-welcome .welcome-balance {
+  padding-bottom: 220px;
+}
+.main .section-welcome .wrapper-welcome .welcome-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 220px;
+  flex-shrink: 0;
+  background: #0c0c0e;
+  /* h2 */
+}
+.main .section-welcome .wrapper-welcome .welcome-title h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  /* span-welcome */
+  /* span-library */
+}
+.main .section-welcome .wrapper-welcome .welcome-title h2 .span-welcome {
+  margin-left: -10px;
+}
+.main .section-welcome .wrapper-welcome .welcome-title h2 .span-library {
+  padding-left: 2px;
+}
+
+/* main */
