@@ -391,7 +391,7 @@ a {
                 letter-spacing: 1px;
                 &:hover {
                   transition: 1s;
-                  color: #bb945f;
+                  background-color: #bb945f;
                   border-color: #bb945f;
                 } /* hover */
               } /* button */
@@ -408,7 +408,10 @@ a {
                 margin-top: 94px;
                 color: #bb945f;
                 border-color: #bb945f;
-                transition: 1s;
+                &:hover {
+                  cursor: auto;
+                  background-color: white;
+                }
               } /* favorite-buttom-4 */
               .favorites-item-title {
                 color: black;

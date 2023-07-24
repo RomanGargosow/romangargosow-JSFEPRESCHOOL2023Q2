@@ -444,7 +444,7 @@ a {
 }
 .main .section-favorites .wrapper-favorites .wrapper-items .favorites-book .favorites-item .favorites-text button:hover {
   transition: 1s;
-  color: #bb945f;
+  background-color: #bb945f;
   border-color: #bb945f;
 }
 .main .section-favorites .wrapper-favorites .wrapper-items .favorites-book .favorites-item .favorites-text .favorite-buttom-1 {
@@ -460,7 +460,10 @@ a {
   margin-top: 94px;
   color: #bb945f;
   border-color: #bb945f;
-  transition: 1s;
+}
+.main .section-favorites .wrapper-favorites .wrapper-items .favorites-book .favorites-item .favorites-text .favorite-buttom-4:hover {
+  cursor: auto;
+  background-color: white;
 }
 .main .section-favorites .wrapper-favorites .wrapper-items .favorites-book .favorites-item .favorites-text .favorites-item-title {
   color: black;
