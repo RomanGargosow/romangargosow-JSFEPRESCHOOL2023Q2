@@ -16,6 +16,14 @@ h2 {
   margin: 0;
   padding: 0;
 }
+h3 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
 ul {
   list-style: none;
 }
@@ -164,7 +172,7 @@ a {
     height: 837px;
     margin: 0 auto;
     p {
-      padding-top: 20px;
+      padding-top: 40px;
       color: #000;
       text-align: center;
       font-family: Inter;
@@ -178,6 +186,7 @@ a {
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
+      padding-top: 20px;
       img {
         cursor: pointer;
       } /* img */
@@ -221,9 +230,207 @@ a {
   /* ******************************************** */
   .section-favorites {
     background-color: #fff;
-    width: 1440px;
-    height: 1439px;
+    min-width: 1440px;
+    .wrapper-favorites {
+      width: 1440px;
+      height: 1439px;
+      margin: 0 auto;
+      .favorites-inputs {
+        color: #0c0c0e;
+        .inputs-title {
+          padding-left: 20px;
+          p {
+            padding-top: 40px;
+            color: #000;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          } /* p */
 
-    margin: 0 auto;
+          .custom-input {
+            cursor: pointer;
+            width: 17px;
+            height: 17px;
+          }
+
+          .inputs-items {
+            display: flex;
+            padding-top: 40px;
+
+            label {
+              color: #000;
+              font-family: Inter;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              cursor: pointer;
+              transition: 1s;
+              &:hover {
+                transition: 1s;
+                color: rgb(128, 81, 73);
+              }
+            } /* label */
+            .div-winter {
+              margin-right: 85px;
+              .input-winter {
+                margin-right: 14px;
+                margin-left: 2px;
+              } /* input-winter */
+            } /* div-winter */
+            .div-spring {
+              margin-right: 82px;
+              .input-spring {
+                margin-right: 16px;
+              } /* input-spring */
+            } /* div-spring */
+
+            .div-summer {
+              margin-right: 83px;
+              .input-summer {
+                margin-right: 16px;
+              } /* input-summer */
+            } /* div-summer */
+
+            .div-autumn {
+              margin-right: 0;
+              .input-autumn {
+                margin-right: 13px;
+              }
+            }
+          } /* input-items */
+        } /* inputs-title */
+      } /* avorites-inputs */
+      .wrapper-items {
+        padding-left: 20px;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 200px;
+        grid-row-gap: 40px;
+        .favorites-book {
+          width: 590px;
+          height: 555px;
+          img {
+            float: right;
+            margin-top: -300px;
+            width: 200px;
+            height: 300px;
+          }
+          .favorites-item {
+            width: 550px;
+            height: 555px;
+            border: 1px solid black;
+
+            .favorites-text {
+              padding-left: 19px;
+              padding-top: 13px;
+
+              button {
+                cursor: pointer;
+                width: 75px;
+                height: 30px;
+                flex-shrink: 0;
+                border-radius: 2px;
+                border: 1px solid #0c0c0e;
+                transition: 1s;
+                color: #0c0c0e;
+                text-align: center;
+                font-family: Inter;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1px;
+                &:hover {
+                  transition: 1s;
+                  color: #bb945f;
+                  border-color: #bb945f;
+                } /* hover */
+              } /* button */
+              .favorite-buttom-1 {
+                margin-top: 14px;
+              } /* favorite-buttom-1 */
+              .favorite-buttom-2 {
+                margin-top: 54px;
+              } /* favorite-buttom-2 */
+              .favorite-buttom-3 {
+                margin-top: 14px;
+              } /* favorite-buttom-3 */
+              .favorite-buttom-4 {
+                margin-top: 94px;
+                color: #bb945f;
+                border-color: #bb945f;
+                transition: 1s;
+                &:hover {
+                  color: #0c0c0e;
+                  border-color: #0c0c0e;
+                }
+              } /* favorite-buttom-4 */
+              .favorites-item-title {
+                color: black;
+                h3 {
+                  color: #000;
+                  font-family: Forum;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 40px; /* 200% */
+                  letter-spacing: 2px;
+                  text-transform: capitalize;
+                } /* h3 */
+                div {
+                  margin-bottom: 20px;
+                  width: 60px;
+                  border-bottom: 1px solid #bb945f;
+                }
+              } /* favorites-item-title */
+              .favorites-text-bold {
+                color: black;
+                p {
+                  color: #000;
+                  font-family: Inter;
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 40px; /* 266.667% */
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  span {
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 40px;
+                    letter-spacing: 2px;
+                    text-transform: capitalize;
+                  } /* favorotes-text-bold2 */
+                } /* favorotes-text-bold */
+              } /* favorites-item-title2 */
+              .favorites-text-normal {
+                width: 355px;
+                padding-top: 20px;
+                color: #000;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 40px; /* 266.667% */
+                letter-spacing: 2px;
+                text-transform: capitalize;
+              } /* favorites-text-normal */
+
+              .book3_correct {
+                width: 357px;
+              }
+            } /* favorites-text */
+          } /* favorites-item */
+        } /* favorites-items */
+      } /* wrapper-items */
+    } /* wrapper-favorites */
   } /* section-favorites */
 } /* main */
