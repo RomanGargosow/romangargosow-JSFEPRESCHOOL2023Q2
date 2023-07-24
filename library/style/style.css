@@ -4,11 +4,17 @@
 
 html {
   scroll-behavior: smooth;
+  transition: 2s;
 }
 
 body {
   margin: 0;
   background-color: #d3d3d3;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -94,7 +100,36 @@ a {
 .main {
   color: black;
   /* comment */
+  /* style-h2 */
   /* welcome */
+  /* ******************************************** */
+  /* section-about */
+  /* ******************************************** */
+  /* section-favorites */
+}
+.main .style-h2 {
+  color: #0c0c0e;
+  /* h2 */
+  /* div */
+}
+.main .style-h2 h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.main .style-h2 div {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 50px;
+  border-bottom: 1px solid #0c0c0e;
 }
 .main .section-welcome {
   background-image: url(../source/bg/bg-welcome.png);
@@ -139,6 +174,81 @@ a {
 }
 .main .section-welcome .wrapper-welcome .welcome-title h2 .span-library {
   padding-left: 2px;
+}
+.main .section-about {
+  background-color: #fff;
+  min-width: 1440px;
+  height: 837px;
+  margin: 0 auto;
+  /* p */
+  /* about-slider */
+  /* slider-pagination */
+}
+.main .section-about p {
+  padding-top: 20px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+}
+.main .section-about .about-slider {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* img */
+  /* img 4 */
+  /* img 5 */
+}
+.main .section-about .about-slider img {
+  cursor: pointer;
+}
+.main .section-about .about-slider .slider-img-4 {
+  display: none;
+}
+.main .section-about .about-slider .slider-img-5 {
+  display: none;
+}
+.main .section-about .slider-pagination {
+  display: flex;
+  width: 78px;
+  margin: 0 auto;
+  padding-top: 35px;
+  /* wrapper-pagination */
+}
+.main .section-about .slider-pagination .wrapper-pagination {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* button-1 */
+  /* button-2 */
+  /* button-3 */
+}
+.main .section-about .slider-pagination .wrapper-pagination .slider-buttons {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.main .section-about .slider-pagination .wrapper-pagination .button-1 {
+  background-color: #bb945f;
+}
+.main .section-about .slider-pagination .wrapper-pagination .button-2 {
+  background-color: #0c0c0e;
+}
+.main .section-about .slider-pagination .wrapper-pagination .button-3 {
+  background-color: #0c0c0e;
+}
+.main .section-favorites {
+  background-color: #fff;
+  width: 1440px;
+  height: 1439px;
+  margin: 0 auto;
 }
 
 /* main */

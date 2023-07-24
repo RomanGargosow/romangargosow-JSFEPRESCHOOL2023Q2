@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  transition: 2s;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
   background-color: #d3d3d3;
 }
 
+h2 {
+  margin: 0;
+  padding: 0;
+}
 ul {
   list-style: none;
 }
@@ -90,6 +95,29 @@ a {
 .main {
   color: black;
   /* comment */
+  .style-h2 {
+    color: #0c0c0e;
+    h2 {
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 20px;
+      color: #0c0c0e;
+      font-family: Forum;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 100% */
+      letter-spacing: 2px;
+      text-transform: capitalize;
+    } /* h2 */
+    div {
+      padding-top: 20px;
+      margin: 0 auto;
+      width: 50px;
+      border-bottom: 1px solid #0c0c0e;
+    } /* div */
+  } /* style-h2 */
+
   .section-welcome {
     background-image: url(../source/bg/bg-welcome.png);
     min-width: 1440px;
@@ -128,4 +156,74 @@ a {
       } /* welcome-title */
     } /* wrapper-welcome */
   } /* welcome */
+
+  /* ******************************************** */
+  .section-about {
+    background-color: #fff;
+    min-width: 1440px;
+    height: 837px;
+    margin: 0 auto;
+    p {
+      padding-top: 20px;
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 200% */
+    } /* p */
+    .about-slider {
+      width: 1400px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      img {
+        cursor: pointer;
+      } /* img */
+      .slider-img-4 {
+        display: none;
+      } /* img 4 */
+      .slider-img-5 {
+        display: none;
+      } /* img 5 */
+    } /* about-slider */
+    .slider-pagination {
+      display: flex;
+      width: 78px;
+      margin: 0 auto;
+      padding-top: 35px;
+      .wrapper-pagination {
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .slider-buttons {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+        }
+        .button-1 {
+          background-color: #bb945f;
+        } /* button-1 */
+        .button-2 {
+          background-color: #0c0c0e;
+        } /* button-2 */
+        .button-3 {
+          background-color: #0c0c0e;
+        } /* button-3 */
+      } /* wrapper-pagination */
+    } /* slider-pagination */
+  } /* section-about */
+
+  /* ******************************************** */
+  .section-favorites {
+    background-color: #fff;
+    width: 1440px;
+    height: 1439px;
+
+    margin: 0 auto;
+  } /* section-favorites */
 } /* main */
