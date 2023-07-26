@@ -38,6 +38,17 @@ a {
   color: white;
 }
 
+button {
+  background-color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+button:hover {
+  transition: 1s;
+  background-color: #bb945f;
+  border: none;
+}
+
 .header {
   background-image: url(../source/bg/bg-header.png);
   min-width: 1440px;
@@ -112,13 +123,17 @@ a {
   color: black;
   /* comment */
   /* style-h2 */
-  /* welcome */
+  /* section-welcome */
   /* ******************************************** */
   /* section-about */
   /* ******************************************** */
   /* section-favorites */
   /* ******************************************** */
-  /* section-favorites */
+  /* section-coffeeShop */
+  /* ******************************************** */
+  /* section-contacts */
+  /* ******************************************** */
+  /* section-library */
 }
 .main .style-h2 {
   color: #0c0c0e;
@@ -280,7 +295,7 @@ a {
   /* input-items */
 }
 .main .section-favorites .wrapper-favorites .favorites-inputs .inputs-title p {
-  padding-top: 40px;
+  padding-top: 42px;
   color: #000;
   font-family: Inter;
   font-size: 20px;
@@ -425,13 +440,11 @@ a {
   /* favorites-text-normal */
 }
 .main .section-favorites .wrapper-favorites .wrapper-items .favorites-book .favorites-item .favorites-text button {
-  cursor: pointer;
   width: 75px;
   height: 30px;
   flex-shrink: 0;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
-  transition: 1s;
   color: #0c0c0e;
   text-align: center;
   font-family: Inter;
@@ -440,11 +453,9 @@ a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  /* hover */
 }
 .main .section-favorites .wrapper-favorites .wrapper-items .favorites-book .favorites-item .favorites-text button:hover {
   transition: 1s;
-  background-color: #bb945f;
   border-color: #bb945f;
 }
 .main .section-favorites .wrapper-favorites .wrapper-items .favorites-book .favorites-item .favorites-text .favorite-buttom-1 {
@@ -531,7 +542,7 @@ a {
 }
 .main .section-coffeeShop .wrapper-coffeeShop {
   width: 1440px;
-  height: 1439px;
+  height: 841px;
   margin: 0 auto;
   /* coffee-text */
   /* menu-wrapper */
@@ -630,6 +641,265 @@ a {
 }
 .main .section-coffeeShop .wrapper-coffeeShop .menu-wrapper .menu-desserts h3 {
   text-align: end;
+}
+.main .section-contacts {
+  background-color: #fff;
+  min-width: 1440px;
+  /* wrapper-contacts */
+}
+.main .section-contacts .wrapper-contacts {
+  width: 1440px;
+  height: 575px;
+  margin: 0 auto;
+  /* contacts-items */
+}
+.main .section-contacts .wrapper-contacts .contacts-items {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+  /* item-contacts */
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* item-title */
+  /* item-numbers */
+  /* item-staff */
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts .item-title {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts .item-numbers {
+  gap: 20px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts .item-numbers a {
+  color: black;
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts .item-numbers span {
+  column-gap: 40px;
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts .item-staff {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts .item-staff p {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts .item-staff span {
+  padding-top: 20px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.main .section-contacts .wrapper-contacts .contacts-items .item-contacts .item-staff span a {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.main .section-libraryCard {
+  background-color: #fff;
+  min-width: 1440px;
+  /* wrapper-library */
+}
+.main .section-libraryCard .wrapper-library {
+  width: 1440px;
+  height: 614px;
+  margin: 0 auto;
+  /* library-items */
+}
+.main .section-libraryCard .wrapper-library .library-items {
+  padding-top: 40px;
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* library-find-card */
+  /* library-get-card */
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card {
+  width: 600px;
+  height: 453px;
+  /* h3 */
+  /* find-form  */
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card h3 {
+  text-align: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-bottom: 30px;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card .find-form {
+  width: 600px;
+  height: 386px;
+  border: 3px solid #bb945f;
+  padding-top: 17px;
+  background: #fff;
+  box-shadow: 0px 4.1px 4.1px 0px rgba(0, 0, 0, 0.26);
+  /* form */
+  /* button */
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card .find-form form {
+  width: 560px;
+  height: 272px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #bb945f;
+  /* p */
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card .find-form form p {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #000;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card .find-form form input {
+  margin: 0 auto;
+  width: 520px;
+  height: 66px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border-color: #fff;
+  border: none;
+  margin-bottom: 25px;
+  color: #8e8e8e;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card .find-form form input:last-child {
+  margin-bottom: 0;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card .find-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 242px;
+  height: 44px;
+  border: 1px solid #0c0c0e;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  transition: 1s;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-find-card .find-form button:hover {
+  transition: all 1s;
+  background-color: #bb945f;
+  border-color: #bb945f;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-get-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 456px;
+  height: 253px;
+  /* get-title */
+  /* get-text */
+  /* get-buttons */
+}
+.main .section-libraryCard .wrapper-library .library-items .library-get-card .get-title {
+  color: #000;
+  text-align: center;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-get-card .get-text {
+  padding-top: 35px;
+  margin-bottom: 34px;
+  color: #000;
+  text-align: right;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 0.4px;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-get-card .get-buttons {
+  color: #0c0c0e;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-get-card .get-buttons button {
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-right: 16px;
+  width: 75px;
+  height: 30px;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-get-card .get-buttons button:last-child {
+  margin-right: 0;
 }
 
 /* main */
