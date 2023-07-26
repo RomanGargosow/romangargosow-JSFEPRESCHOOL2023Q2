@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./source/icons/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!--font-family: 'Forum', cursive;
+   font-family: 'Inter', sans-serif;-->
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Brooklyn Public Library</title>
+</head>
+
+
+<body>
+
+
+  <header class="header">
+    <div class="wrapper-header">
+      <h1>
+        <a href="#welcome">Brooklyn Public Library</a>
+      </h1>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#favorites">Favorites</a></li>
+          <li><a href="#coffeeShop">Coffee Shop</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#libraryCard">Library Card</a></li>
+        </ul>
+      </nav>
+      <img class="header-nav-img" src="./source/icons/icon-profile.svg" alt="icon profile">
+    </div><!-- end wrapper-header -->
+  </header> <!-- end header  -->
+
+
+  <main class="main">
+    <section class="section-welcome" id="welcome">
+      <div class="wrapper-welcome">
+        <div class="welcome-balance"></div>
+        <div class="welcome-title">
+          <h2><span class="span-welcome">Welcome</span><br>
+            to the Brooklyn <br>
+            <span class="span-library"></span> Library
+          </h2>
+        </div> <!-- end welcome-title -->
+
+      </div> <!-- end wrapper-main -->
+
+    </section> <!-- end welcome -->
+
+    <section class="section-about" id="about">
+      <div class="wrapper-about">
+        <div class="style-h2">
+          <h2>About</h2>
+          <div></div> <!-- decor line -->
+        </div> <!-- end about-h2 -->
+        <p>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+
+        <div class="about-slider">
+          <img class="slider-img-1" src="./source/img/section_about/about-slider-1.png" alt="girl">
+          <img class="slider-img-2" src="./source/img/section_about/about-slider-2.png" alt="busts">
+          <img class="slider-img-3" src="./source/img/section_about/about-slider-3.png" alt="large bookshelf">
+          <img class="slider-img-4" src="./source/img/section_about/about-slider-4.png" alt="small bookshelf">
+          <img class="slider-img-5" src="./source/img/section_about/about-slider-5.png" alt="columns">
+        </div> <!-- end about-slider -->
+
+        <div class="slider-pagination">
+          <div class="wrapper-pagination">
+            <div class="slider-buttons button-1"></div>
+          </div> <!-- end wrapper-pagination  -->
+
+          <div class="wrapper-pagination">
+            <div class="slider-buttons button-2"></div>
+          </div> <!-- end wrapper-pagination  -->
+
+          <div class="wrapper-pagination">
+            <div class="slider-buttons button-3"></div>
+          </div> <!-- end wrapper-pagination  -->
+
+        </div> <!-- end slider-pagination -->
+      </div><!-- end wrapper-about -->
+
+    </section> <!-- end about -->
+
+    <section class="section-favorites" id="favorites">
+      <div class="wrapper-favorites">
+        <div class="style-h2">
+          <h2>Favorites</h2>
+          <div></div>
+        </div> <!-- style-h2 -->
+
+        <div class="favorites-inputs">
+          <form class="inputs-title">
+            <p>Pick favorites of season</p>
+            <div class="inputs-items">
+
+              <div class="custom-radiobutton div-winter">
+                <input class="custom-input input-winter" type="radio" id="inputs-item-winter" name="season"
+                  value="winter" checked>
+                <label for="inputs-item-winter">Winter</label>
+              </div>
+
+              <div class="custom-radiobutton div-spring">
+                <input class="custom-input input-spring" type="radio" id="inputs-item-spring" name="season"
+                  value="spring">
+                <label for="inputs-item-spring">Spring</label>
+              </div>
+
+              <div class="custom-radiobutton div-summer">
+                <input class="custom-input input-summer" type="radio" id="inputs-item-summer" name="season"
+                  value="summer">
+                <label for="inputs-item-summer">Summer</label>
+              </div>
+
+              <div class="custom-radiobutton div-autumn">
+                <input class="custom-input input-autumn" type="radio" id="inputs-item-autumn" name="season"
+                  value="autumn">
+                <label for="inputs-item-autumn">Autumn</label>
+              </div>
+
+            </div> <!-- end inputs-items -->
+          </form> <!-- inputs-title -->
+        </div> <!-- end favorites-inputs -->
+
+        <div class="wrapper-items">
+
+          <div class="favorites-book"> <!-- BOOK_1 -->
+            <div class="favorites-item">
+              <div class="favorites-text">
+                <div class="favorites-item-title book1">
+                  <h3>Staff Picks</h3>
+                  <div></div>
+                </div> <!-- end favorites-item-title -->
+
+                <div class="favorites-text-bold">
+                  <p>The Book Eaters <br>
+                    <span>By Sunyi Dean</span>
+                  </p>
+                </div> <!-- end favorites-item-title2 -->
+
+                <p class="favorites-text-normal">
+                  An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous
+                  mind-eater son from
+                  tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a
+                  strong, complex
+                  protagonist. Not for the faint of heart.
+                </p> <!-- end favorites-text-normal -->
+                <button class="favorite-buttom-1">Buy</button>
+              </div> <!-- end favorites-text -->
+            </div> <!-- end favorites-item -->
+
+            <img src="./source/img/section_favorites/book1.png" alt="The Book Eaters">
+          </div> <!-- end favorites-book -->
+
+          <!-- ************************* -->
+
+          <div class="favorites-book"> <!-- BOOK_2 -->
+            <div class="favorites-item">
+              <div class="favorites-text">
+                <div class="favorites-item-title book1">
+                  <h3>Staff Picks</h3>
+                  <div></div>
+                </div> <!-- end favorites-item-title -->
+
+                <div class="favorites-text-bold">
+                  <p>Cackle <br>
+                    <span>By Rachel Harrison</span>
+                  </p>
+                </div> <!-- end favorites-item-title2 -->
+
+                <p class="favorites-text-normal">
+                  Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than
+                  here - where a
+                  woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful
+                  witch.
+                </p> <!-- end favorites-text-normal -->
+                <button class="favorite-buttom-2">Buy</button>
+              </div> <!-- end favorites-text -->
+            </div> <!-- end favorites-item -->
+
+            <img src="./source/img/section_favorites/book2.png" alt="Cackle">
+          </div> <!-- end favorites-book -->
+
+          <!-- ************************* -->
+
+          <div class="favorites-book book3"> <!-- BOOK_3 -->
+            <div class="favorites-item">
+              <div class="favorites-text">
+                <div class="favorites-item-title book1">
+                  <h3>Staff Picks</h3>
+                  <div></div>
+                </div> <!-- end favorites-item-title -->
+
+                <div class="favorites-text-bold">
+                  <p>Dante: Poet of the Secular World
+                    <br>
+                    <span>By Erich Auerbach</span>
+                  </p>
+                </div> <!-- end favorites-item-title2 -->
+
+                <p class="favorites-text-normal book3_correct">
+                  Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in
+                  general, arguing
+                  for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine
+                  significance—an
+                  inspired introduction to Dante's main themes.
+                </p> <!-- end favorites-text-normal -->
+                <button class="favorite-buttom-3">Buy</button>
+              </div> <!-- end favorites-text -->
+            </div> <!-- end favorites-item -->
+
+            <img src="./source/img/section_favorites/book3.png" alt="Dante: Poet of the Secular World">
+          </div> <!-- end favorites-book -->
+
+          <!-- ************************* -->
+
+          <div class="favorites-book"> <!-- BOOK_4 -->
+            <div class="favorites-item">
+              <div class="favorites-text">
+                <div class="favorites-item-title ">
+                  <h3>Staff Picks</h3>
+                  <div></div>
+                </div> <!-- end favorites-item-title -->
+
+                <div class="favorites-text-bold">
+                  <p>The Last Queen
+                    <br>
+                    <span>By Clive Irving</span>
+                  </p>
+                </div> <!-- end favorites-item-title2 -->
+
+                <p class="favorites-text-normal">
+                  A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors
+                  have evolved and
+                  thrived as the modern world has changed around them.
+                </p> <!-- end favorites-text-normal -->
+                <button class="favorite-buttom-4" disabled>Own</button>
+              </div> <!-- end favorites-text -->
+            </div> <!-- end favorites-item -->
+
+            <img src="./source/img/section_favorites/book4.png" alt="The Last Queen">
+          </div> <!-- end favorites-book -->
+
+        </div> <!-- end wrapper-items -->
+      </div><!-- end wrapper-favorites -->
+
+    </section> <!-- end favorites -->
+
+    <section class="section-coffeeShop" id="coffeeShop">
+      <div class="wrapper-coffeeShop">
+        <div class="style-h2">
+          <h2>Coffee shop</h2>
+          <div></div>
+        </div> <!-- style-h2 -->
+        <p class="coffee-text"><span class="span1"></span>In our library, we have of cozy coffee shop, welcoming in
+          customers with
+          frothy
+          cappuccinos and friendly conversation. <br>
+          <span class="span2"></span>You can get a favorite book and read in coffee shop. Our barista to cook you best
+          coffee, and
+          also you can try
+          desserts
+          from bakery.
+        </p>
+
+
+        <div class="menu-wrapper">
+          <div class="menu menu-coffee">
+            <h3>Coffee & Tea</h3>
+            <div class="item-menu">
+              <p class="name-item">Cold Brew Coffee</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$3</p>
+            </div> <!-- end item-menu -->
+            <div class="item-menu">
+              <p class="name-item">French Press Pot</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$5</p>
+            </div> <!-- end item-menu -->
+            <div class="item-menu">
+              <p class="name-item">Espresso</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$2</p>
+            </div> <!-- end item-menu -->
+            <div class="item-menu">
+              <p class="name-item">Cappuccino</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$4</p>
+            </div> <!-- end item-menu -->
+            <div class="item-menu">
+              <p class="name-item">Hot tea</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$2</p>
+            </div> <!-- end item-menu -->
+            <div class="item-menu">
+              <p class="name-item">Cold tea</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$2</p>
+            </div> <!-- end item-menu -->
+          </div> <!-- end menu-coffee -->
+
+
+          <div class="menu menu-desserts">
+            <h3>Desserts & Cakes</h3>
+
+            <div class="item-menu item-menu2">
+              <p class="name-item">Forest Gateau</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$16</p>
+            </div> <!-- end item-menu -->
+
+            <div class="item-menu item-menu2 ">
+              <p class="name-item">Blue Moon</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$16</p>
+            </div> <!-- end item-menu -->
+
+            <div class="item-menu item-menu2">
+              <p class="name-item">Truffle Cake</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$15</p>
+            </div> <!-- end item-menu -->
+
+            <div class="item-menu item-menu2">
+              <p class="name-item">Chocolate Cake</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$18</p>
+            </div> <!-- end item-menu -->
+
+            <div class="item-menu item-menu2">
+              <p class="name-item">Poet’s Dream Cake</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$16</p>
+            </div> <!-- end item-menu -->
+
+            <div class="item-menu item-menu2">
+              <p class="name-item">Pineapple Cake</p>
+              <div class="line-item"></div>
+              <p class="dollars-item">$14</p>
+            </div> <!-- end item-menu -->
+
+          </div> <!-- end menu-desserts -->
+        </div> <!-- end menu-wrapper -->
+      </div> <!-- end wrapper-coffee -->
+
+    </section> <!-- end coffeShop -->
+
+    <section class="section-contacts" id="contacts">
+      <div class="wrapper-contacts">
+        <div class="style-h2">
+          <h2>Our Contacts</h2>
+          <div></div>
+        </div> <!-- end h2-style -->
+
+        <div class="contacts-items">
+          <div class="item-contacts">
+
+            <p class="item-title">For all Library inquiries:</p>
+
+            <div class="item-numbers">
+              <span>Please call <a href="tel:(617)730-2370" target="_blank">(617) 730-2370</a></span>
+              <span>For TTY service, please call <a href="tel:(617)730-2370" target="_blank">(617) 730-2370</a></span>
+              <span>Putterham Library: <a href="tel:(617)730-2385" target="_blank">(617) 730-2385</a></span>
+            </div> <!-- end item-numbers -->
+
+            <div class="item-staff">
+              <p>Senior Staff</p>
+              <span>Library Director:
+                <a href="mailto:AmandaHirst@gmail.com" target="_blank">Amanda Hirst</a>
+              </span>
+            </div> <!-- end item-staff -->
+
+          </div> <!-- end item-contacts -->
+          <div class="item-map">
+            <img src="./source/img/section_contacts/map.png" alt="map">
+          </div> <!-- end item-map -->
+        </div> <!-- end contacts-items -->
+      </div> <!-- end wrapper-contacts -->
+    </section> <!-- end contacts -->
+
+
+
+    <section class="section-libraryCard" id="libraryCard">
+      <div class="wrapper-library">
+
+        <div class="style-h2">
+          <h2>Digital Library Cards</h2>
+          <div></div>
+        </div> <!-- end h2-style -->
+
+        <div class="library-items">
+          <div class="library-find-card">
+
+            <h3>Find your Library card</h3>
+            <div class="find-form">
+
+              <form action="/action">
+                <p>Brooklyn Public Library</p>
+                <input type="text" id="nameCard" placeholder="Reader's name" pattern="[a-zA-Z0-9-]+" required>
+
+                <input type="text" id="numberCard" placeholder="Card number" pattern="[a-zA-Z0-9-]+" required>
+              </form>
+              <button>Check the card</button>
+            </div> <!-- end find-form  -->
+          </div> <!-- end library-find-card -->
+
+          <div class="library-get-card">
+            <p class="get-title">Get a reader card</p>
+            <p class="get-text">You will be able to see a reader card after <br>
+              logging into account or you can register a new <br>
+              account</p>
+            <div class="get-buttons">
+              <button>Sign Up</button>
+              <button>Log in</button>
+            </div>
+          </div> <!-- end library-get-card -->
+        </div> <!-- end library-items -->
+
+      </div>
+    </section> <!-- end libraryCard-->
+
+  </main> <!-- end main -->
+
+
+  <footer class="footer">
+    <div class="wrapper-footer">
+
+
+      <div class="footer-above-line">
+
+        <div class="footer-address-social_networks">
+          <div class="adres"><a href="https://goo.gl/maps/PNPTGDbETJfk7qwb9" target="_blank">286 Cadman Plaza, New York,
+              NY 11238,
+              United States</a></div>
+
+          <ul class="social">
+            <li><a href="https://twitter.com/ElonMusk" target="_blank"><img src="./source/icons/u_twitter-alt.svg"
+                  alt="twitter"></img></a></li>
+            <li><a href="https://www.instagram.com/elonofficiall/" target="_blank"><img
+                  src="./source/icons/u_instagram.svg" alt="instagram"></img></a></li>
+            <li><a href="https://www.facebook.com/groups/378029113438251/" target="_blank"><img
+                  src="./source/icons/u_facebook-f.svg" alt="facebook"></img></a></li>
+          </ul>
+
+        </div> <!-- end footer-address-social_networks -->
+
+        <div class="footer-opening-hours">
+          <p>Mon - Fri <br>
+            08:00 am - 07:00 pm</p>
+          <p>Sat - Sun <br>
+            10:00 am - 06:00 pm</p>
+        </div> <!-- footer-opening-hours -->
+      </div> <!-- end above-line  -->
+
+      <div class="footer-line"></div>
+
+
+      <div class="footer-under-line">
+        <p>2023</p>
+        <a class="footer-school" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a>
+        <a href="https://github.com/RomanGargosow" target="_blank">Roman Gargosow</a>
+      </div> <!-- end under-line -->
+
+    </div> <!-- end wrapper-footer -->
+  </footer> <!-- end footer -->
+
+
+  <script src="./js/index.js"></script>
+</body><!-- end body -->
+
+
+</html>
