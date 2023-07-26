@@ -5,12 +5,12 @@
 
 html {
   scroll-behavior: smooth;
-  transition: 2s;
 }
 
 body {
   margin: 0;
   background-color: #d3d3d3;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -51,7 +51,7 @@ button:hover {
 
 .header {
   background-image: url(../source/bg/bg-header.png);
-  min-width: 1440px;
+  width: 1440px;
   height: 90px;
   margin: 0 auto;
   /* wrapper-header */
@@ -161,8 +161,9 @@ button:hover {
 }
 .main .section-welcome {
   background-image: url(../source/bg/bg-welcome.png);
-  min-width: 1440px;
+  width: 1440px;
   height: 600px;
+  margin: 0 auto;
   /* wrapper-welcome */
 }
 .main .section-welcome .wrapper-welcome {
@@ -329,7 +330,7 @@ button:hover {
   padding-left: 37px;
 }
 .main .section-favorites .wrapper-favorites .favorites-inputs .inputs-title .inputs-items .custom-radiobutton input[type=radio] + label:hover {
-  color: rgb(124, 94, 94);
+  color: #bb945f;
 }
 .main .section-favorites .wrapper-favorites .favorites-inputs .inputs-title .inputs-items .custom-radiobutton input[type=radio] + label::before {
   content: "";
@@ -471,6 +472,7 @@ button:hover {
   margin-top: 94px;
   color: #bb945f;
   border-color: #bb945f;
+  cursor: auto;
 }
 .main .section-favorites .wrapper-favorites .wrapper-items .favorites-book .favorites-item .favorites-text .favorite-buttom-4:hover {
   cursor: auto;
@@ -897,9 +899,133 @@ button:hover {
   margin-right: 16px;
   width: 75px;
   height: 30px;
+  transition: 1s;
+  border: 1px black solid;
+}
+.main .section-libraryCard .wrapper-library .library-items .library-get-card .get-buttons button:hover {
+  transition: all 1s;
+  background-color: #bb945f;
+  border-color: #bb945f;
 }
 .main .section-libraryCard .wrapper-library .library-items .library-get-card .get-buttons button:last-child {
   margin-right: 0;
 }
 
 /* main */
+/* ******************************************** */
+.footer {
+  background-color: #0c0c0e;
+  width: 1440px;
+  height: 250px;
+  margin: 0 auto;
+  /* wrapper-footer  */
+}
+.footer .wrapper-footer {
+  margin: 0 auto;
+  width: 1400px;
+  /* footer-above-line */
+  /* footer-line */
+  /* footer-under-line */
+}
+.footer .wrapper-footer .footer-above-line {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  /* footer-address-social_networks */
+  /* footer-opening-hours */
+}
+.footer .wrapper-footer .footer-above-line .footer-address-social_networks {
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* adres */
+  /* social */
+}
+.footer .wrapper-footer .footer-above-line .footer-address-social_networks .adres {
+  width: 229px;
+  /* a */
+}
+.footer .wrapper-footer .footer-above-line .footer-address-social_networks .adres a {
+  text-align: left;
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  transition: 1s;
+}
+.footer .wrapper-footer .footer-above-line .footer-address-social_networks .adres a:hover {
+  transition: 1s;
+  color: #bb945f;
+}
+.footer .wrapper-footer .footer-above-line .footer-address-social_networks .social {
+  margin: 0;
+  padding: 0;
+  width: 102px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .wrapper-footer .footer-above-line .footer-opening-hours {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* p */
+}
+.footer .wrapper-footer .footer-above-line .footer-opening-hours p {
+  color: #fff;
+  text-align: right;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+}
+.footer .wrapper-footer .footer-line {
+  width: 1400px;
+  height: 1px;
+  background: #fff;
+  margin-top: 30px;
+}
+.footer .wrapper-footer .footer-under-line {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 44px;
+  /* p */
+  /* a */
+  /* footer-school */
+}
+.footer .wrapper-footer .footer-under-line p {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
+}
+.footer .wrapper-footer .footer-under-line a {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
+  transition: 1s;
+}
+.footer .wrapper-footer .footer-under-line a:hover {
+  transition: 1s;
+  color: #bb945f;
+}
+.footer .wrapper-footer .footer-under-line .footer-school {
+  padding-left: 140px;
+}
+
+/* footer */
