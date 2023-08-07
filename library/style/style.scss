@@ -9,7 +9,6 @@ html {
 body {
   margin: 0;
   background-color: #d3d3d3;
-  overflow-x: hidden;
 }
 
 h2 {
@@ -47,17 +46,18 @@ button {
 }
 .header {
   background-image: url(../source/bg/bg-header.png);
-  width: 1440px;
+  max-width: 1440px;
   height: 90px;
   margin: 0 auto;
   .wrapper-header {
     display: flex;
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
+    justify-content: space-between;
 
     h1 {
       padding-left: 20px;
-      margin-right: 454px;
+
       a {
         color: #fff;
         font-family: Forum;
@@ -74,37 +74,41 @@ button {
       } /* a */
     } /* h1 */
     /*  *************************************** */
-
-    .header-nav {
-      margin-right: 40px;
+    .wrapper-nav-login {
+      min-width: 650px;
       display: flex;
       align-items: center;
+      padding-right: 20px;
+      .header-nav {
+        width: 584px;
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
 
-      ul {
-        padding: 0;
-        display: inline-flex;
-        align-items: flex-start;
-        gap: 30px;
-        li {
-          color: black;
-          a {
-            color: #fff;
-            font-family: Inter;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            transition: 1s;
-            &:hover {
-              color: gray;
+        ul {
+          padding: 0;
+          display: inline-flex;
+          align-items: flex-start;
+          gap: 23px;
+          li {
+            color: black;
+            a {
+              padding: 0;
+              color: #fff;
+              font-family: Inter;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
               transition: 1s;
-            }
-          } /* a */
-        } /* li */
-      } /* ul */
-    } /* header-nav */
-    img {
-      margin-right: 20px;
-    } /* nav img */
+              &:hover {
+                color: gray;
+                transition: 1s;
+              }
+            } /* a */
+          } /* li */
+        } /* ul */
+      } /* header-nav */
+    } /* wrapper-nav-login */
   } /* wrapper-header */
 } /* header */
 
@@ -117,8 +121,9 @@ button {
     color: #0c0c0e;
     h2 {
       margin: 0 auto;
+      margin-top: -1px;
       text-align: center;
-      padding-top: 20px;
+      padding-top: 21px;
       color: #0c0c0e;
       font-family: Forum;
       font-size: 40px;
@@ -138,14 +143,14 @@ button {
 
   .section-welcome {
     background-image: url(../source/bg/bg-welcome.png);
-    width: 1440px;
-    height: 600px;
+    max-width: 1440px;
     margin: 0 auto;
     .wrapper-welcome {
-      width: 1440px;
+      max-width: 1440px;
       margin: 0 auto;
       .welcome-balance {
-        padding-bottom: 220px;
+        padding-top: 220px;
+        padding-bottom: 160px;
       } /* welcome-balance */
       .welcome-title {
         display: flex;
@@ -155,6 +160,7 @@ button {
         height: 220px;
         flex-shrink: 0;
         background: #0c0c0e;
+
         h2 {
           color: #fff;
           text-align: center;
@@ -179,7 +185,7 @@ button {
   /* ******************************************** */
   .section-about {
     background-color: #fff;
-    min-width: 1440px;
+    max-width: 1440px;
     height: 837px;
     margin: 0 auto;
     p {
@@ -193,11 +199,27 @@ button {
       line-height: 40px; /* 200% */
     } /* p */
     .about-slider {
-      width: 1400px;
+      max-width: 1400px;
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
       padding-top: 20px;
+      @media (min-width: 930px) and (max-width: 1375px) {
+        .slider-img-3 {
+          display: none;
+        }
+      }
+
+      @media (min-width: 1px) and (max-width: 929px) {
+        justify-content: center;
+        .slider-img-2 {
+          display: none;
+        }
+        .slider-img-3 {
+          display: none;
+        }
+      }
+
       img {
         cursor: pointer;
       } /* img */
@@ -241,10 +263,11 @@ button {
   /* ******************************************** */
   .section-favorites {
     background-color: #fff;
-    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
     .wrapper-favorites {
-      width: 1440px;
-      height: 1439px;
+      max-width: 1440px;
+      /* height: 1439px; */
       margin: 0 auto;
       .favorites-inputs {
         color: #0c0c0e;
@@ -366,6 +389,14 @@ button {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 200px;
         grid-row-gap: 40px;
+        @media (min-width: 1px) and (max-width: 1417px) {
+          grid-column-gap: initial;
+        }
+        @media (min-width: 1px) and (max-width: 1230px) {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          justify-items: center;
+        }
         .favorites-book {
           width: 590px;
           height: 555px;
@@ -489,9 +520,10 @@ button {
   /* ******************************************** */
   .section-coffeeShop {
     background-color: #fff;
-    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
     .wrapper-coffeeShop {
-      width: 1440px;
+      max-width: 1440px;
       height: 841px;
       margin: 0 auto;
       .coffee-text {
@@ -501,7 +533,7 @@ button {
         .span2 {
           padding-left: 3px;
         }
-        width: 1400px;
+        max-width: 1400px;
         padding-top: 40px;
         margin: 0 auto;
         color: #000;
@@ -516,7 +548,7 @@ button {
       .menu-wrapper {
         padding-top: 40px;
         margin: 0 auto;
-        width: 1400px;
+        max-width: 1400px;
         display: flex;
         justify-content: space-between;
         .menu {
@@ -590,16 +622,17 @@ button {
   /* ******************************************** */
   .section-contacts {
     background-color: #fff;
-    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
     .wrapper-contacts {
-      width: 1440px;
+      max-width: 1440px;
       height: 575px;
       margin: 0 auto;
       .contacts-items {
         padding-top: 40px;
         display: flex;
         justify-content: space-between;
-        width: 1400px;
+        max-width: 1400px;
         margin: 0 auto;
         .item-contacts {
           display: flex;
@@ -685,14 +718,15 @@ button {
   /* ******************************************** */
   .section-libraryCard {
     background-color: #fff;
-    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
     .wrapper-library {
-      width: 1440px;
+      max-width: 1440px;
       height: 614px;
       margin: 0 auto;
       .library-items {
         padding-top: 40px;
-        width: 1400px;
+        max-width: 1400px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -846,12 +880,12 @@ button {
 /* ******************************************** */
 .footer {
   background-color: #0c0c0e;
-  width: 1440px;
+  max-width: 1440px;
   height: 250px;
   margin: 0 auto;
   .wrapper-footer {
     margin: 0 auto;
-    width: 1400px;
+    max-width: 1400px;
     .footer-above-line {
       display: flex;
       justify-content: space-between;
@@ -908,7 +942,7 @@ button {
     } /* footer-above-line */
 
     .footer-line {
-      width: 1400px;
+      max-width: 1400px;
       height: 1px;
       background: #fff;
       margin-top: 30px;
