@@ -13,3 +13,20 @@ console.log(`
      блок <footer> +8:\n
 Общие требования к верстке +20\n
 `);
+
+const burgerButton = document.getElementById('burger-button');
+const burgerMenu = document.getElementById('burger-menu');
+const burgerLinks = document.querySelectorAll('.header-open-burger a'); // Выбираем все ссылки в меню
+
+burgerButton.addEventListener('click', () => {
+  burgerMenu.classList.toggle('active');
+  burgerButton.classList.toggle('active');
+});
+
+// Добавляем обработчик события для каждой ссылки
+burgerLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    burgerMenu.classList.remove('active'); // Скрываем меню при клике на ссылку
+    burgerButton.classList.remove('active');
+  });
+});
