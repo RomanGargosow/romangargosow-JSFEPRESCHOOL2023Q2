@@ -24,16 +24,31 @@
       <h1>
         <a href="#welcome">Brooklyn Public Library</a>
       </h1>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#favorites">Favorites</a></li>
-          <li><a href="#coffeeShop">Coffee Shop</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-          <li><a href="#libraryCard">Library Card</a></li>
-        </ul>
-      </nav>
-      <img class="header-nav-img" src="./source/icons/icon-profile.svg" alt="icon profile">
+      <div class="wrapper-nav-login">
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#coffeeShop">Coffee Shop</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#libraryCard">Library Card</a></li>
+          </ul>
+        </nav> <!-- nav -->
+        <img class="header-nav-img" src="./source/icons/icon-profile.svg" alt="icon profile">
+        <div class="header-burger" id="burger-button">
+          <span></span>
+        </div> <!-- header-burger -->
+        <div class="header-open-burger" id="burger-menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#coffeeShop">Coffee Shop</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#libraryCard">Library Card</a></li>
+          </ul>
+        </div> <!-- header-open-burger -->
+      </div><!-- wrapper-nav-login -->
+
     </div><!-- end wrapper-header -->
   </header> <!-- end header  -->
 
@@ -41,14 +56,14 @@
   <main class="main">
     <section class="section-welcome" id="welcome">
       <div class="wrapper-welcome">
-        <div class="welcome-balance"></div>
-        <div class="welcome-title">
-          <h2><span class="span-welcome">Welcome</span><br>
-            to the Brooklyn <br>
-            <span class="span-library"></span> Library
-          </h2>
-        </div> <!-- end welcome-title -->
-
+        <div class="welcome-balance">
+          <div class="welcome-title">
+            <h2><span class="span-welcome">Welcome</span><br>
+              to the Brooklyn <br>
+              <span class="span-library"></span> Library
+            </h2>
+          </div> <!-- end welcome-title -->
+        </div> <!-- welcome-balance -->
       </div> <!-- end wrapper-main -->
 
     </section> <!-- end welcome -->
@@ -62,11 +77,15 @@
         <p>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
 
         <div class="about-slider">
-          <img class="slider-img-1" src="./source/img/section_about/about-slider-1.png" alt="girl">
-          <img class="slider-img-2" src="./source/img/section_about/about-slider-2.png" alt="busts">
-          <img class="slider-img-3" src="./source/img/section_about/about-slider-3.png" alt="large bookshelf">
-          <img class="slider-img-4" src="./source/img/section_about/about-slider-4.png" alt="small bookshelf">
-          <img class="slider-img-5" src="./source/img/section_about/about-slider-5.png" alt="columns">
+          <img class="carret carret-left" src="./source/icons/Carret_Left.svg" alt="Carret Left">
+          <div class="imgs"><img class="slider-img-1" src="./source/img/section_about/about-slider-1.png" alt="girl">
+            <img class="slider-img-2" src="./source/img/section_about/about-slider-2.png" alt="busts">
+            <img class="slider-img-3" src="./source/img/section_about/about-slider-3.png" alt="large bookshelf">
+            <img class="slider-img-4" src="./source/img/section_about/about-slider-4.png" alt="small bookshelf">
+            <img class="slider-img-5" src="./source/img/section_about/about-slider-5.png" alt="columns">
+          </div> <!-- imgs -->
+
+          <img class="carret carret-right" src="./source/icons/Carret_Right.svg" alt="Carret Right">
         </div> <!-- end about-slider -->
 
         <div class="slider-pagination">
@@ -82,6 +101,13 @@
             <div class="slider-buttons button-3"></div>
           </div> <!-- end wrapper-pagination  -->
 
+          <div class="wrapper-pagination">
+            <div class="slider-buttons button-4"></div>
+          </div> <!-- end wrapper-pagination  -->
+
+          <div class="wrapper-pagination">
+            <div class="slider-buttons button-5"></div>
+          </div> <!-- end wrapper-pagination  -->
         </div> <!-- end slider-pagination -->
       </div><!-- end wrapper-about -->
 
@@ -411,9 +437,12 @@
 
           <div class="library-get-card">
             <p class="get-title">Get a reader card</p>
-            <p class="get-text">You will be able to see a reader card after <br>
+            <p class="get-text desktop">You will be able to see a reader card after <br>
               logging into account or you can register a new <br>
               account</p>
+
+            <p class="get-text mobile">You will be able to see a reader card after
+              logging into <br>account or you can register a new account</p>
             <div class="get-buttons">
               <button>Sign Up</button>
               <button>Log in</button>
