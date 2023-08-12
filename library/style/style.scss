@@ -316,6 +316,13 @@ button {
           display: none;
         }
       }
+      .imgs {
+        @media (min-width: 1440px) {
+          display: flex;
+          justify-content: space-between;
+          width: 1440px;
+        }
+      }
       .carret {
         position: absolute;
         display: none;
