@@ -336,7 +336,7 @@ button:hover {
   position: relative;
   max-width: 1400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 20px;
   /* carret */
@@ -358,6 +358,13 @@ button:hover {
   }
   .main .section-about .about-slider .slider-img-3 {
     display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .main .section-about .about-slider .imgs {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
   }
 }
 .main .section-about .about-slider .carret {
