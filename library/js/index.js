@@ -21,3 +21,21 @@ burgerLinks.forEach((link) => {
     burgerButton.classList.remove('active');
   });
 });
+
+document.addEventListener('click', (e) => {
+  const click = e.composedPath().includes(burgerButton);
+  if (!click) {
+    burgerButton.classList.remove('active');
+    burgerMenu.classList.remove('active');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+  const triggerPosition = 10; // Предел прокрутки, при котором нужно скрыть burger-menu
+
+  if (scrollPosition > triggerPosition) {
+    burgerMenu.classList.remove('active');
+    burgerButton.classList.remove('active');
+  }
+});
