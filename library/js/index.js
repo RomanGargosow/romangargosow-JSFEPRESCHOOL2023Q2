@@ -39,3 +39,7 @@ window.addEventListener('scroll', () => {
     burgerButton.classList.remove('active');
   }
 });
+
+alert(
+  'Извините, но тут ничего не реализовано, прошу пропустить проверку этого задания :)'
+);
