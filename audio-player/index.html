@@ -5,25 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="icon" href="./source/icons/icons8-winamp-32.png" type="image/x-icon">
     <title>Audio Player</title>
 </head>
 
 <body>
+    <div class="wrapper">
 
-    <header class="header">
+        <main class="main">
+            <div class="winamp">
 
-    </header>
 
+                <audio id="audioPlayer" src="./source/audio/1.emenem/Eminem-Dido_-_Stan.mp3"></audio>
 
-    <main>
+                <div class="winamp-head">
+                    <div class="icon-border cover">
+                        <img src="./source/audio/1.emenem/emenem.jpeg" alt="head-img">
+                    </div>
+                    <div class="name-track">
+                        <span>Eminem - Stan ft. Dido - Stan</span>
+                        <span class="trackTime"> 03:05</span>
+                    </div>
+                </div>
 
-    </main>
-    <footer>
-        <p>2023</p>
-        <a class="footer-school" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a>
-        <a href="https://github.com/RomanGargosow" target="_blank">Roman Gargosow</a>
+                <div class="track-line">
+                    <input type="range" class="track-line" min="0" max="100" value="0">
+                </div>
+
+                <div class="winamp-controls">
+                    <div class="prev">
+                        <img src="./source/icons/controls/left.png" alt="left">
+                    </div>
+                    <div class="play" id="playButton">
+                        <img src="./source/icons/controls/play.png" alt="play">
+                    </div>
+                    <div class="payse">
+                        <img src="./source/icons/controls/payse.png" alt="payse">
+                    </div>
+                    <div class="next">
+                        <img src="./source/icons/controls/right.png" alt="right">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-line">
+            <span> <img src="./source/icons/pngegg.png" alt="icons">D://Footer</span>
+        </div>
+        <div class="container">
+            <p>2023</p>
+            <a class="footer-school" href="https://rs.school/js-stage0/" target="_blank"><img
+                    src="https://rs.school/images/rs_school_js.svg" alt="logo RSS"></a>
+            <a href="https://github.com/RomanGargosow" target="_blank">Roman Gargosow</a>
+        </div>
     </footer>
+    <script src="./index.js" type="module"></script>
 </body>
 
 </html>
