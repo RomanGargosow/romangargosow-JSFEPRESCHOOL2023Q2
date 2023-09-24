@@ -1,4 +1,6 @@
-import { playList } from './playlist';
+alert('Извините, но не вывез по JS, так что музыки не будет =(');
+
+/* import { playlist } from './playlist';
 const btnPlayTrack = document.querySelector('.play');
 const btnPauseTrack = document.querySelector('.pause');
 const btnNextTrack = document.querySelector('.next');
@@ -11,8 +13,6 @@ const cover = document.querySelector('.cover');
 // Получите ссылку на аудиоэлемент и кнопку воспроизведения
 const audioPlayer = document.getElementById('audioPlayer');
 const playButton = document.getElementById('playButton');
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const audioPlayer = document.getElementById('audioPlayer');
@@ -29,4 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
         '<img src="./source/icons/controls/play.png" alt="play">';
     }
   });
-});
+}); */
