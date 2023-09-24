@@ -12,9 +12,24 @@ body {
   flex-direction: column;
   min-height: 100vh; /* Это важно для "sticky footer" */
 
+  @font-face {
+    font-family: 'Fixedsys';
+    src: url('./source/fonts/Fixedsys_Excelsior_3.01_Regular.ttf')
+      format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   a {
     color: black;
     text-decoration: none;
+    font-family: 'Fixedsys';
+  }
+  span {
+    font-family: 'Fixedsys';
+  }
+  p {
+    font-family: 'Fixedsys';
   }
 }
 
@@ -24,6 +39,22 @@ body {
 }
 
 .footer {
+  .footer-line {
+    background-color: #001f7e;
+    border: 2px solid #e0e0e0;
+    height: 20px;
+    margin: 0 auto;
+    margin: 0 80px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #cbd3e0;
+      img {
+        width: 20px;
+      }
+    }
+  }
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +62,7 @@ body {
     align-items: center;
     background-color: #ffffff;
 
-    margin: 15px 80px;
+    margin: 0 80px 15px;
     border: 1px solid #008080; /* Цвет рамки и толщина */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень */
 
