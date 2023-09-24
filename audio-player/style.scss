@@ -36,6 +36,78 @@ body {
 .wrapper {
   flex-grow: 1; /* Растягиваем контент, чтобы заполнить оставшееся пространство */
   /* Ваш стиль для контейнера контента */
+  display: flex;
+  align-items: center;
+
+  .main {
+    width: 100%;
+    height: 100%;
+
+    .winamp {
+      margin: 0 auto;
+      background-color: #515462;
+      width: 600px;
+      height: 200px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень */
+      border: 2px solid #323448; /* Задаём стиль, толщину и цвет рамки */
+    }
+    .winamp-head {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 50px;
+      .icon-border {
+        background-color: red;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #323448;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .name-track {
+        background: #0d0b0b;
+        margin: 0 auto;
+        width: 350px;
+        border: 3px solid #323448;
+        span {
+          padding-left: 5px;
+          color: #5bb55c;
+        }
+      }
+    }
+
+    .track-line {
+      margin: 0 auto;
+      margin-top: 15px;
+      input {
+        display: flex;
+        background-color: #31304f;
+        width: 550px;
+        height: 20px;
+        accent-color: rgba(249, 249, 250, 0.32);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень */
+        border: 2px solid #1f2032;
+        opacity: 0.5;
+        transition: opacity 0.2s;
+      }
+    }
+  }
+
+  .winamp-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: 0 auto;
+    div {
+      cursor: pointer;
+    }
+  }
 }
 
 .footer {
@@ -44,14 +116,15 @@ body {
     border: 2px solid #e0e0e0;
     height: 20px;
     margin: 0 auto;
-    margin: 0 80px;
+    margin: 0 81px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень */
     span {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       color: #cbd3e0;
       img {
-        width: 20px;
+        width: 18px;
       }
     }
   }
